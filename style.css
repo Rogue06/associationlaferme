@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;700&family=Dancing+Script:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.5em;
+}
+h2{
+    text-transform: uppercase;
+    text-align:center;
+    padding-top: 30px;
+    font-size: 2em;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+/* **************************navbar************************** */
+
+nav{
+    overflow: hidden;
+    background-color: #FFFAE1;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+header li{
+    float: right;
+    font-size: 1.2em;
+}
+
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding:  18px 16px;
+
+}
+
+#logo{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    float: left;
+    
+
+}
+
+
+/* ************************** IMAGE PRINCIPALE ************************** */
+
+#imageprincipale{
+    padding-top: 60px;
+    background: url(Medias/IMG_3148.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+    
+}
+
+
+
+header h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 6em;
+    margin-top: 50px;
+    text-shadow: 5px 3px 2px black;
+}
+
+#premiertrait{
+    height: 1px;
+    width: 25%;
+    margin: -30px auto;
+    background-color: #FFFAE1;
+    box-shadow: 10px;
+}
+
+h3{
+    text-align: center;
+    color:antiquewhite;
+    font-size: 1.8em;
+    font-style: italic;
+    text-shadow: 5px 3px 2px black;
+    
+}
+
+/* ************************** PRESENTATION ************************** */
+
+#presentation{
+    background-color: #FFFAE1;
+    padding: 10px 0px 100px 0;
+}
+
+#textintro{
+    padding: 0px 20%;
+}
+
+#animaux{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+    
+}
+
+.imagesanimaux h2 {
+
+    font-family: 'Dancing Script', cursive;
+    text-transform :none;
+    text-align :center;
+    font-size: 2em;
+    margin: 20px;
+    font-weight: 300;
+
+}
+
+.imagesanimaux img{
+
+  border-radius: 50px;  
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.7);
+}
+
+.imagesanimaux img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+
+}
+
+/* ************************** equipe ************************** */
+
+#equipe{
+    background-color: #f1f2f6;
+    margin: 0;
+    padding: 80px 0;
+    width: 100%;
+   
+}
+
+#equipe h2{
+    padding: 0;
+    margin: -10px 0px 100px 30px;
+}
+
+.equipe-membre {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    
+}
+/* Photos décalées */
+.equipe-membre > p {
+    position: absolute;
+    margin: 0;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.equipe-membre:nth-child(odd) > p {
+    left: 370px;
+}
+
+.equipe-membre:nth-child(even) > p {
+    right: 370px;
+}
+
+#equipe-chat-img {
+    background-image: url(Medias/IMG_3150.jpg);
+  }
+
+
+#equipe-lapin-img {
+    background-image: url(Medias/IMG_3166.jpg);
+  }
+
+
+#equipe-rat-img {
+    background-image: url(Medias/IMG_3163.jpg);
+  }
+
+
+#equipe-groupe-img {
+    background-image: url(Medias/IMG_3153.jpg);
+  }
+/* écriture des nom sur photo decalées */
+#equipe span {
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    height: 45px;
+    width: 240px;
+    font-size: 1.3em;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px #000000;
+}
+#equipe li:nth-child(odd) span {
+    left: -120px;
+}
+#equipe li:nth-child(even) span {
+    right: -120px;
+}
+
+/* couleurs des rectangles nom animaux */
+.rectanglebleu {
+    background-color: #6abff7;
+}
+
+.rectanglevert {
+    background-color: #01DF74;
+}
+/* ************************** FOOTER ************************** */
+
+footer {
+    background-color: #524A3A;
+    color: #FFFAE1;
+    padding: 20px 0 10px 0;
+    text-align: center;
+  }
+  form{
+    margin: 0 auto;
+    max-width: 900px;
+    
+
+
+  }
+  input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px;
+    outline-color: black;
+  }
+
+textarea {
+    height: 120px;
+    
+    resize: none; /* Disables resizability */
+      
+      
+
+}
+
+button {
+    font-size: 1.5em;
+    background-color: #FFFAE1;
+    transition: transform 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: #6abff7;
+    color: #FFFAE1;
+    cursor: pointer;
+    transform: scale(1.05);
+
+    
+}
+
+#deuxiemetrait {
+    height: 1px;
+    width: 75%;
+    background-color: #FFFAE1;
+    margin: 60px auto;
+  }
+  #copyrighteticons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+  }
+  #copyright {
+    width: 50%;
+    text-align: left;
+    color: #FFFAE1;
+  }
+  #icons {
+    width: 50%;
+    text-align: right;
+  }
+  #icons a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: #FFFAE1;
+  }
+  #icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}
+
+
+@media screen and (max-width:920px){
+    margin-left: 0px;
+    
+}
+
+/* ********** Page quisommesnous **********/
+
+#container{
+    background-color: #f1f2f6;
+    padding: 90px 0px 100px 0;
+}
+
+
+  #quisommesnous{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+    
+}
+
+.esther {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
